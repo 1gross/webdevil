@@ -1,0 +1,12 @@
+
+.socialNetworks{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &.small{
+
+  }
+  & > * + *{
+    margin-left: 20px;
+  }
+}

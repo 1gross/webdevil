@@ -1,0 +1,30 @@
+.grossBlock{
+  position: relative;
+  z-index: 1;
+  flex: 0 0 350px;
+  max-width: 350px;
+  height: 315px;
+  user-select: none;
+  img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    height: 100%;
+    vertical-align: bottom;
+  }
+  //&::after{
+  //  content: '';
+  //  display: block;
+  //  width: 622px;
+  //  height: 311px;
+  //  background: url('../../../images/gradient.svg');
+  //  background-size: contain;
+  //  position: absolute;
+  //  bottom: 0;
+  //  left: 50%;
+  //  transform: translateX(-50%);
+  //  z-index: 1;
+  //}
+}

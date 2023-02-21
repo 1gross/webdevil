@@ -1,0 +1,11 @@
+.categoriesBlock{
+  h2{
+    margin-bottom: 20px;
+  }
+  .categoriesList{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: -8px;
+  }
+}

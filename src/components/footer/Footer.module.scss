@@ -1,0 +1,11 @@
+@import "@css/variables.scss";
+
+footer{
+  background-color: var(--headerColor);
+  padding: 10px 0;
+  .footerBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

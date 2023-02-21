@@ -1,0 +1,39 @@
+@import "@css/variables.scss";
+
+.social{
+  border: 2px solid lighten($mainColor, 15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: border-color .1s, color .1s, outline-color .1s;
+  outline: 4px solid rgba(235, 74, 74, 0);
+  &:hover{
+    color: $orange;
+    border-color: $orange;
+    outline-color: rgba(235, 74, 74, .4);
+    transition: border-color .3s, color .3s, outline-color .3s;
+  }
+  &::before{
+    @include icon;
+    font-size: 30px;
+  }
+  &.telegram{
+    &::before{
+      content: '\e90f';
+    }
+  }
+  &.instagram{
+    &::before{
+      content: '\e910';
+    }
+  }
+  &.small{
+    &::before{
+      font-size: 24px;
+    }
+  }
+}

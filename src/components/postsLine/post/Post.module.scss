@@ -1,0 +1,97 @@
+@import "@css/variables.scss";
+
+.postBlock{
+  display: grid;
+  grid-template-columns: 56px auto;
+  grid-template-rows: 56px auto;
+  grid-gap: 15px;
+  grid-template-areas:  "category post"
+                        "likePost post";
+  & + .postBlock{
+    margin-top: 20px;
+  }
+}
+
+.likePost{
+  grid-area: likePost;
+  border: 1px solid;
+  padding: 0;
+  background-color: transparent;
+  width: 56px;
+  height: 56px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &::before{
+    content: '\e905';
+    @include icon;
+    margin-bottom: 5px;
+  }
+}
+.categoryPost{
+  grid-area: category;
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+}
+.contentPost{
+  grid-area: post;
+  margin-left: 15px;
+  background-color: var(--componentColor);
+  border-radius: 5px;
+  .postHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 15px 25px;
+    position: relative;
+    &::before{
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 12px 14px 12px 0;
+      border-color: transparent var(--componentColor) transparent transparent;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-100%, -50%);
+    }
+    .category{
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .date{
+      color: lighten($mainColor, 60%);
+      font-size: 12px;
+    }
+  }
+  .postBody{
+    padding: 15px 25px;
+    .title{
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .description{
+      margin-top: 15px;
+      color: lighten($mainColor, 60%);
+    }
+    .btnsBlock{
+      margin-top: 25px;
+      .savePost{
+        font-size: 14px;
+        &::before{
+          content: '\e908';
+          @include icon;
+          font-size: 16px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

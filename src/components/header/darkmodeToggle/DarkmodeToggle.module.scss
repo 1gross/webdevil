@@ -1,0 +1,25 @@
+@import "@css/variables.scss";
+.themeToggle{
+  position: relative;
+  &::before{
+    content: '\e90a';
+    @include icon;
+    z-index: 2;
+  }
+  &.light{
+    color: var(--orange);
+    &:after{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--orange);
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+  }
+}

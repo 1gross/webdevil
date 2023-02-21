@@ -1,0 +1,27 @@
+@import "@css/variables.scss";
+
+.categoryItem {
+  flex: 0 0 calc(100% / 2 - 16px);
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--componentColor);
+  border-radius: 5px;
+  padding: 20px 15px;
+  color: inherit;
+  .categoryThumb{
+    width: 56px;
+    height: 56px;
+    margin-bottom: 15px;
+  }
+  .categoryTitle{
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .categoryPostCount{
+    font-size: 12px;
+    color: lighten($mainColor, 60%);
+  }
+}
