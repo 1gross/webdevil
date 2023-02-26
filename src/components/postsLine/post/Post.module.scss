@@ -1,18 +1,19 @@
 @import "@css/variables.scss";
 
-.postBlock{
+.postBlock {
   display: grid;
   grid-template-columns: 56px auto;
   grid-template-rows: 56px auto;
   grid-gap: 15px;
-  grid-template-areas:  "category post"
-                        "likePost post";
-  & + .postBlock{
+  grid-template-areas:
+    "category post"
+    "likePost post";
+  & + .postBlock {
     margin-top: 20px;
   }
 }
 
-.likePost{
+.likePost {
   grid-area: likePost;
   border: 1px solid;
   padding: 0;
@@ -26,32 +27,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &::before{
-    content: '\e905';
+  &::before {
+    content: "\e905";
     @include icon;
     margin-bottom: 5px;
   }
 }
-.categoryPost{
+.categoryPost {
   grid-area: category;
   width: 56px;
   height: 56px;
   border-radius: 5px;
 }
-.contentPost{
+.contentPost {
   grid-area: post;
   margin-left: 15px;
   background-color: var(--componentColor);
   border-radius: 5px;
-  .postHeader{
+  .postHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 56px;
     padding: 15px 25px;
     position: relative;
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       width: 0;
       height: 0;
       border-style: solid;
@@ -62,31 +63,31 @@
       left: 0;
       transform: translate(-100%, -50%);
     }
-    .category{
+    .category {
       font-size: 16px;
       font-weight: 500;
     }
-    .date{
+    .date {
       color: lighten($mainColor, 60%);
       font-size: 12px;
     }
   }
-  .postBody{
+  .postBody {
     padding: 15px 25px;
-    .title{
+    .title {
       font-size: 24px;
       font-weight: bold;
     }
-    .description{
+    .description {
       margin-top: 15px;
       color: lighten($mainColor, 60%);
     }
-    .btnsBlock{
+    .btnsBlock {
       margin-top: 25px;
-      .savePost{
+      .savePost {
         font-size: 14px;
-        &::before{
-          content: '\e908';
+        &::before {
+          content: "\e908";
           @include icon;
           font-size: 16px;
           margin-right: 10px;

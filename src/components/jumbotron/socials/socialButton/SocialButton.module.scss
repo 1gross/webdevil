@@ -1,6 +1,6 @@
 @import "@css/variables.scss";
 
-.social{
+.social {
   border: 2px solid lighten($mainColor, 15%);
   display: flex;
   justify-content: center;
@@ -9,30 +9,30 @@
   border-radius: 5px;
   cursor: pointer;
   color: white;
-  transition: border-color .1s, color .1s, outline-color .1s;
+  transition: border-color 0.1s, color 0.1s, outline-color 0.1s;
   outline: 4px solid rgba(235, 74, 74, 0);
-  &:hover{
+  &:hover {
     color: $orange;
     border-color: $orange;
-    outline-color: rgba(235, 74, 74, .4);
-    transition: border-color .3s, color .3s, outline-color .3s;
+    outline-color: rgba(235, 74, 74, 0.4);
+    transition: border-color 0.3s, color 0.3s, outline-color 0.3s;
   }
-  &::before{
+  &::before {
     @include icon;
     font-size: 30px;
   }
-  &.telegram{
-    &::before{
-      content: '\e90f';
+  &.telegram {
+    &::before {
+      content: "\e90f";
     }
   }
-  &.instagram{
-    &::before{
-      content: '\e910';
+  &.instagram {
+    &::before {
+      content: "\e910";
     }
   }
-  &.small{
-    &::before{
+  &.small {
+    &::before {
       font-size: 24px;
     }
   }

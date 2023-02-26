@@ -8,23 +8,23 @@
   outline: none;
 }
 
-body{
-  --bodyColor: #0E121B;
+body {
+  --bodyColor: #0e121b;
   --headerColor: #171d2c;
   --componentColor: #131925;
   --fontColor: #fff;
-  --fontColorGray: #B0B5BB;
-  --orange: #EB4A4A;
-  &.light-mode{
-    --fontColor: #646B75;
-    --bodyColor: #D8DADF;
+  --fontColorGray: #b0b5bb;
+  --orange: #eb4a4a;
+  &.light-mode {
+    --fontColor: #646b75;
+    --bodyColor: #d8dadf;
     --headerColor: #fff;
-    --componentColor: #E9EBED;
+    --componentColor: #e9ebed;
   }
 }
-body{
+body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--fontColor);
@@ -32,7 +32,8 @@ body{
   background-color: var(--bodyColor);
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
   font-weight: bold;
   line-height: 1;
@@ -44,29 +45,31 @@ h2 {
   font-size: 24px;
   letter-spacing: 1px;
 }
-input, select, button{
-  font-family: 'Montserrat', sans-serif;
+input,
+select,
+button {
+  font-family: "Montserrat", sans-serif;
 }
-a[class]{
+a[class] {
   text-decoration: none;
 }
-.c-orange{
+.c-orange {
   color: $orange;
 }
-.logo{
-  font-family: 'Ruberoid', sans-serif;
+.logo {
+  font-family: "Ruberoid", sans-serif;
   color: white;
   text-decoration: none;
   font-size: 24px;
   line-height: 1;
-  &::before{
-    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExIDBIOHY1LjM3OUw0LjE5NiAxLjU3NSAyLjA3NSAzLjY5NiA1Ljg3OCA3LjVILjV2M2g1LjM3OWwtMy44MDQgMy44MDQgMi4xMjEgMi4xMjFMOCAxMi42MjFWMThoM3YtNS4zNzlsMy44MDMgMy44MDMgMi4xMi0yLjEyMS0zLjgwMi0zLjgwM0gxOC41di0zaC01LjM3OWwzLjgwMy0zLjgwMy0yLjEyMS0yLjEyTDExIDUuMzc4VjBaIiBmaWxsPSIjZmZmIi8+PC9zdmc+');
+  &::before {
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExIDBIOHY1LjM3OUw0LjE5NiAxLjU3NSAyLjA3NSAzLjY5NiA1Ljg3OCA3LjVILjV2M2g1LjM3OWwtMy44MDQgMy44MDQgMi4xMjEgMi4xMjFMOCAxMi42MjFWMThoM3YtNS4zNzlsMy44MDMgMy44MDMgMi4xMi0yLjEyMS0zLjgwMi0zLjgwM0gxOC41di0zaC01LjM3OWwzLjgwMy0zLjgwMy0yLjEyMS0yLjEyTDExIDUuMzc4VjBaIiBmaWxsPSIjZmZmIi8+PC9zdmc+");
     display: inline-block;
     margin-right: 10px;
     height: 19px;
   }
-  &.dark{
-    .c-orange{
+  &.dark {
+    .c-orange {
       color: white;
     }
   }
@@ -85,66 +88,65 @@ a[class]{
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color .1s, outline .1s;
+  transition: background-color 0.1s, outline 0.1s;
   outline: 4px solid rgba(235, 74, 74, 0);
   &:hover {
     background-color: darken($orange, 5%);
-    outline-color: rgba(235, 74, 74, .4);
-    transition: background-color .3s, outline-color .3s;
+    outline-color: rgba(235, 74, 74, 0.4);
+    transition: background-color 0.3s, outline-color 0.3s;
   }
-  &.login{
-    &::before{
-      content: '\e90d';
+  &.login {
+    &::before {
+      content: "\e90d";
       @include icon;
       font-size: 16px;
       margin-right: 10px;
     }
   }
 }
-.btn-simple{
+.btn-simple {
   border: 0;
   background-color: transparent;
   color: white;
   font-size: 22px;
   cursor: pointer;
   padding: 0;
-  transition: color .1s;
+  transition: color 0.1s;
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover{
+  &:hover {
     color: $orange;
-    transition: color .3s;
+    transition: color 0.3s;
   }
 }
 
-.category-thumb{
-  &::before{
-    content: '';
+.category-thumb {
+  &::before {
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
     border-radius: 5px;
   }
-  &.cat-js{
-    &::before{
-      background: url('./images/category/js.svg') no-repeat 50% / cover;
+  &.cat-js {
+    &::before {
+      background: url("./images/category/js.svg") no-repeat 50% / cover;
     }
   }
-  &.cat-html{
-    &::before{
-      background: url('./images/category/html5.svg') no-repeat 50%;
+  &.cat-html {
+    &::before {
+      background: url("./images/category/html5.svg") no-repeat 50%;
     }
   }
-  &.cat-css{
-    &::before{
-      background: url('./images/category/css3.svg') no-repeat 50%;
+  &.cat-css {
+    &::before {
+      background: url("./images/category/css3.svg") no-repeat 50%;
     }
   }
-  &.cat-react{
-    &::before{
-      background: url('./images/category/reactjs.svg') no-repeat 50%;
+  &.cat-react {
+    &::before {
+      background: url("./images/category/reactjs.svg") no-repeat 50%;
     }
   }
 }
-

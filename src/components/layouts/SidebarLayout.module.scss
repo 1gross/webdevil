@@ -1,16 +1,16 @@
-.asideLayout{
+.asideLayout {
   padding: 60px 0;
   display: grid;
   grid-template-columns: auto 345px;
   grid-template-rows: auto min-content;
   grid-gap: 45px 60px;
-  grid-template-areas:  "content sidebar";
-  & > .content{
+  grid-template-areas: "content sidebar";
+  & > .content {
     grid-area: content;
   }
-  & > .sidebar{
+  & > .sidebar {
     grid-area: sidebar;
-    & > * + *{
+    & > * + * {
       margin-top: 45px;
     }
   }

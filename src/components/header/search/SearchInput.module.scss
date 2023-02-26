@@ -1,9 +1,9 @@
 @import "@css/variables.scss";
 
-.search{
+.search {
   position: relative;
-  &::before{
-    content: '\e90e';
+  &::before {
+    content: "\e90e";
     @include icon;
     color: $fontColorGray;
     position: absolute;
@@ -12,7 +12,7 @@
     font-size: 16px;
     left: 10px;
   }
-  input{
+  input {
     height: 40px;
     background-color: lighten($mainColor, 10%);
     border: 1px solid lighten($mainColor, 15%);
@@ -20,17 +20,15 @@
     color: $fontColorGray;
     padding-left: 35px;
     padding-right: 10px;
-    transition: box-shadow .1s, border-color .1s;
-    &:hover{
+    transition: box-shadow 0.1s, border-color 0.1s;
+    &:hover {
       border-color: $orange;
-      transition: border-color .3s;
+      transition: border-color 0.3s;
     }
-    &:focus{
+    &:focus {
       border-color: $orange;
-      box-shadow:
-      0 0 0 4px rgba(235, 74, 74, .4);
-      transition: box-shadow .3s, border-color .3s;
+      box-shadow: 0 0 0 4px rgba(235, 74, 74, 0.4);
+      transition: box-shadow 0.3s, border-color 0.3s;
     }
   }
-
 }
