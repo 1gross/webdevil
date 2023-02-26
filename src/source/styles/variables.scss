@@ -1,9 +1,9 @@
-$mainColor: #0E121B;
-$fontColorGray: #B0B5BB;
-$orange: #EB4A4A;
+$mainColor: #0e121b;
+$fontColorGray: #b0b5bb;
+$orange: #eb4a4a;
 
 @mixin icon {
-  font-family: 'icons' !important;
+  font-family: "icons" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -12,5 +12,4 @@ $orange: #EB4A4A;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }

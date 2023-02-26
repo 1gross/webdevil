@@ -1,18 +1,18 @@
 @import "@css/variables.scss";
-.themeToggle{
+.themeToggle {
   position: relative;
-  &::before{
-    content: '\e90a';
+  &::before {
+    content: "\e90a";
     @include icon;
     z-index: 2;
   }
-  &.light{
+  &.light {
     color: var(--orange);
-    &:after{
+    &:after {
       position: absolute;
       top: 50%;
       left: 50%;
-      content: '';
+      content: "";
       display: block;
       width: 6px;
       height: 6px;

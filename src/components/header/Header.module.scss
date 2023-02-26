@@ -1,22 +1,22 @@
 @import "@css/variables.scss";
 
-.header{
+.header {
   background-color: var(--headerColor);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
-  .headerBlock{
+  .headerBlock {
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .headerRight{
+    .headerRight {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      & > * + *{
+      & > * + * {
         margin-left: 30px;
       }
     }

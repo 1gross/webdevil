@@ -1,47 +1,47 @@
 @import "@css/variables.scss";
 
-.lastPostCard{
+.lastPostCard {
   background-color: var(--componentColor);
   border-radius: 5px;
-  .header{
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
     padding: 15px 20px;
-    .category{
+    .category {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       white-space: nowrap;
       font-size: 16px;
       flex: 1;
-      .categoryThumb{
+      .categoryThumb {
         flex: 0 0 30px;
         height: 30px;
         max-width: 30px;
         margin-right: 10px;
       }
     }
-    .likes{
+    .likes {
       display: flex;
       justify-content: flex-end;
       align-items: center;
       color: lighten($mainColor, 60%);
-      &::before{
-        content: '\e905';
+      &::before {
+        content: "\e905";
         @include icon;
         margin-right: 10px;
       }
     }
   }
-  .postThumb{
+  .postThumb {
     width: 100%;
     height: 150px;
     background-size: cover;
     background-position: 50%;
   }
-  .title{
+  .title {
     font-size: 18px;
     font-weight: bold;
     padding: 20px;

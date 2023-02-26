@@ -1,6 +1,6 @@
 @import "@css/variables.scss";
 
-.sortItem{
+.sortItem {
   border: 0;
   padding: 0 35px 0 0;
   font-weight: 500;
@@ -9,9 +9,9 @@
   font-size: 16px;
   position: relative;
   cursor: pointer;
-  &.active{
-    &::after{
-      content: '\e907';
+  &.active {
+    &::after {
+      content: "\e907";
       @include icon;
       font-size: 16px;
       position: absolute;
@@ -20,7 +20,7 @@
       transform: translateY(-50%);
     }
   }
-  & + .sortItem{
+  & + .sortItem {
     margin-left: 20px;
   }
 }

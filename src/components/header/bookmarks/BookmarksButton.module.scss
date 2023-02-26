@@ -1,8 +1,8 @@
 @import "@css/variables.scss";
 
-.bookmarks{
-  &::before{
-    content: '\e90b';
+.bookmarks {
+  &::before {
+    content: "\e90b";
     @include icon;
   }
 }

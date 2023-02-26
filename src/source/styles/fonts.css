@@ -1,48 +1,48 @@
 @font-face {
-    font-family: 'icons';
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-    src: url('../fonts/icons/icomoon.woff2') format('woff2'),
-    url('../fonts/icons/icomoon.woff') format('woff');
+  font-family: "icons";
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  src: url("../fonts/icons/icomoon.woff2") format("woff2"),
+    url("../fonts/icons/icomoon.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'Ruberoid';
-    font-style: normal;
-    font-weight: bold;
-    src: url('../fonts/Ruberoid-Bold.woff2') format('woff2'),
-    url('../fonts/Ruberoid-Bold.woff') format('woff');
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Ruberoid-Bold.woff2") format("woff2"),
+    url("../fonts/Ruberoid-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
-    url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
-    url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-    url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
-    url('../fonts/Montserrat-Light.woff') format('woff');
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"),
+    url("../fonts/Montserrat-Light.woff") format("woff");
 }
